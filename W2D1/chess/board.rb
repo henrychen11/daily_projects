@@ -19,28 +19,49 @@ attr_accessor :board
   end
 
   def [](position)
+    raise 'invalid pos' unless valid_pos?(pos)
+
     row , col = position
     @board[row][col]
   end
 
   def []=(position, value)
+    raise 'invalid pos' unless valid_pos?(pos)
+
     row , col = position
     @board[row][col] = value
+  end
+
+  def add_piece(piece, pos)
+    raise 'position not empty' unless empty?(pos)
+
+    self[pos] = piece
   end
 
   def make_starting_grid()
   end
 
-  def checkmate?()
-    return false
-    true
+  def valid_pos?(pos)
+    pos.all? { |coord| coord.between?(0, 7) }
+  end
+
+  def checkmate?(color)
+    return false unless in_check?(color)
+
+    pieces.select { |p| p.color == color }.all? do |piece|
+      piece.valid_moves.empty?
+    end
   end
 
   def find_king(king)
   end
-  
+
 
   def move_piece(start_pos, end_pos)
     raise "Position not avaiable" if start_pos.nil? || !end_pos.nil?
+  end
+
+  def empty?(pos)
+    self[pos].empty?
   end
 end
