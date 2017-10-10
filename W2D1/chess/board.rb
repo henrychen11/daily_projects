@@ -28,11 +28,19 @@ attr_accessor :board
     @board[row][col] = value
   end
 
+  def make_starting_grid()
+  end
+
+  def checkmate?()
+    return false
+    true
+  end
+
+  def find_king(king)
+  end
+  
+
   def move_piece(start_pos, end_pos)
     raise "Position not avaiable" if start_pos.nil? || !end_pos.nil?
   end
-
-
 end
-
-a = Board.new
