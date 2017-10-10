@@ -1,15 +1,17 @@
+require 'singleton'
+require_relative 'piece'
 
 class NullPiece < Piece
-  def initialize(king, knight, pawn, bishop, queen, rook)
-    @king = king
-    @knight = knight
-    @pawn = pawn
-    @bishop = bishop
-    @queen = queen
-    @rook = rook
+  attr_reader :symbol
+  include Singleton
+
+  def initialize
+    @symbol = " "
+    @color = :none
   end
 
-  def moves()
+  def moves
+    []
   end
 
 end
