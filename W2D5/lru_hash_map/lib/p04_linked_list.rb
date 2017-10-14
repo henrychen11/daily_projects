@@ -24,7 +24,7 @@ end
 
 class LinkedList
   include Enumerable
-  
+
   def initialize
     @head = Node.new
     @tail = Node.new
@@ -102,6 +102,8 @@ class LinkedList
       next_node = next_node.next
     end
   end
+
+
 
   # uncomment when you have `each` working and `Enumerable` included
   def to_s
