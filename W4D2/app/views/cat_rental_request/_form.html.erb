@@ -1,0 +1,16 @@
+<% if new_rental.persisted? %>
+<%   action_url = cat_rental_request_url(new_rental) %>
+<% else %>
+  <% action_url = cat_rental_requests_url %>
+<% end %>
+
+<form action="<%=action_url%>" method="post">
+  <% if cat.persisted? %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+
+  <label for="cat_list">List of Cats</label>
+
+
+  <input type="submit" value="Book your reservation!">
+</form>
