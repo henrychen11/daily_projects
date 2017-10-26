@@ -1,5 +1,6 @@
 .col {
-  display: flex;
+  float: left;
+  box-sizing: border-box;
 }
 
 /* Attribute selector targeting all elements

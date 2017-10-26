@@ -1,1 +1,48 @@
-  
+author {
+  color: $gray;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+// li {
+//   line-height: 18px;
+// }
+//
+li a {
+  line-height: 12px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+subtitle {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+ul:hover {
+  color: $blue;
+  text-decoration: underline;
+}
+
+input {
+  padding: 8px;
+  border: 2px solid $gray;
+}
+
+footer {
+  text-align: center;
+  color: $gray;
+}
+
+email {
+  float: right;
+  box-sizing: border-box;
+}
