@@ -1,0 +1,11 @@
+<h1>This is the Album Show Page</h1>
+
+<ul>
+  <li>Title: <%= @album.title %></li>
+  <li>Year: <%= @album.year %></li>
+  <li>Live: <%= @album.live %></li>
+  <li>Band ID: <%= @album.band_id %></li>
+  <br>
+  <br>
+  <%= button_to "Edit Album", edit_album_url, method: :edit%>
+</ul>

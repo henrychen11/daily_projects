@@ -1,0 +1,23 @@
+<h1>This is the Album Edit Page!</h1>
+
+<%= render "shared/errors" %>
+
+<form action="<%= edit_album_url%>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <%= auth_token %>
+
+  <label>Album Title: </label>
+  <input type="text" name="album[title]" value="<%= @album.title%>">
+
+  <label>Album Year: </label>
+  <input type="year" name="album[year]" value="<%= @album.year%>">
+
+  <label>Live?</label>
+  <input type="radio" name="live[true]" value="t" <%= "checked" if album.live %> >
+  <input type="radio" name="live[false]" value="f">
+
+  <label>Band ID</label>
+  <input type="dropdown" name="album[band_id]" value="<%= @album.band_id %> ">
+
+  <input type="submit" name="" value="Add New Album">
+</form>
