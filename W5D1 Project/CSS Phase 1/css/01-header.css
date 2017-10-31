@@ -1,0 +1,56 @@
+body {
+
+  }
+
+header {
+  background: red;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+.header a {
+
+}
+
+.header-nav {
+
+
+}
+
+.header-logo {
+  float:left;
+  padding: 10px 20px;
+  margin-left: 50px;
+  font-weight: 600;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.header-list {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  border-right: 1px solid white;
+}
+
+.header-list > li {
+  padding: 10px 15px;
+  font-weight: 400;
+  border-left: 1px solid white;
+}
+
+.header-list >li:hover {
+  background: black;
+}
+
+.header-logo:hover {
+
+}
+
+.group:after {
+  content:"";
+  display: block;
+  clear:both
+}
