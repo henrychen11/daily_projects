@@ -1,0 +1,10 @@
+<h1>This is the Sub Index Page</h1>
+
+<% @subs.each do |s| %>
+<name><%= s.name %></name>
+<br>
+<des><%= s.description %></des>
+<br>
+<%= button_to "Make Post", new_post_url, method: :get %>
+<br>
+<% end %>
