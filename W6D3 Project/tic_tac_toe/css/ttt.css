@@ -1,0 +1,33 @@
+ul {
+  width: 300px;
+}
+
+li {
+  border: 5px solid black;
+  display: block;
+  list-style: none;
+  cursor: pointer;
+  /*margin: 30px auto;*/
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+
+.click {
+  background-color: white;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.unclick {
+  background-color: gray;
+}
+
+.unclick:hover {
+    background-color: yellow;
+}
+
+/*h1 {
+  margin: 0 auto;
+}*/

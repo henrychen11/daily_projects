@@ -1,0 +1,28 @@
+.disks0 {
+  background-color: gray;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+
+.disks1 {
+  background-color: gray;
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+}
+
+.disks2 {
+  background-color: gray;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.tower {
+  border-bottom: 10px solid black;
+  height: 200px;
+  width: 150px;
+  display: inline-block;
+  margin: 20px;
+}
