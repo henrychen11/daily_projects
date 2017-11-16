@@ -1,0 +1,34 @@
+/* PHASE 8: Thumbs */
+.thumb img {
+  /*background-image: url('./images/cat.jpg');*/
+  /*height: 50px;*/
+  /*width: 50px;*/
+  border-radius: 5px;
+  /*margin: 5px;*/
+  border: 1px solid black;
+  /*margin: 5px;*/
+
+}
+
+.friends ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.friends li {
+  width: 55px;
+  padding: 5px;
+}
+
+.friends li:nth-child(3){
+
+}
+
+
+/*img {
+  display: inline-block;
+  width: 33%;
+  height: auto;
+
+}*/
